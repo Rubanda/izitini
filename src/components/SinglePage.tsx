@@ -8,15 +8,15 @@ import { imgs } from '../data/itemPhoto'
 const TabItemComponent = ({
     title = '',
     onItemClicked = () =>{},
-    isActive = false,
+    isActive = true,
 }) => {
     return (
-        <div className= 'nav-item'
+        <ul className= {isActive ? 'tabitem' :''}
             onClick={onItemClicked}
         >
-          <li className='nav-link'>{title}</li>
+          <li className='nav-link fw-bold text-black fs-4'>{title}</li>
 
-        </div>
+        </ul>
     )
 }
 
@@ -27,9 +27,9 @@ const SinglePage = () => {
         <>
             <div className='container-fluid'>
                 {/* picture and product name and details */}
-                <div className='container-fluid p-5' id='p'>
+                <div className='container-fluid p-5 mx-auto' id='p'>
                     <div className='row'>
-                        <div className='col-sm border border-primary'>
+                        <div className='col-sm'>
                             <div className='col'>
                                 {imgs.map(({ id, pic }) => (
                                     <div key={id}>
@@ -43,7 +43,7 @@ const SinglePage = () => {
                                 ))}
                             </div>
                         </div>
-                        <div className='col border border-primary bg-light'>
+                        <div className='col bg-light'>
                             <div className='d-flex flex-shrink-1'>
                                 <img
                                     src='https://www.stockportfencing.co.uk/wp-content/uploads/2016/11/s202.jpg'
@@ -53,7 +53,7 @@ const SinglePage = () => {
                                 />
                             </div>
                         </div>
-                        <div className='col border border-primary'>
+                        <div className='col'>
                             <h2 className='fw-bold'>Product Name</h2>
                             <p>name of the store</p>
                             <span className='fs-2' style={{ color: '#ff9900' }}>
