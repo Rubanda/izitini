@@ -43,7 +43,7 @@ const SinglePage = () => {
                                 ))}
                             </div>
                         </div>
-                        <div className='col bg-light'>
+                        <div className='col'>
                             <div className='d-flex flex-shrink-1'>
                                 <img
                                     src='https://www.stockportfencing.co.uk/wp-content/uploads/2016/11/s202.jpg'
