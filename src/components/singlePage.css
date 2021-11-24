@@ -18,7 +18,7 @@
 
 .tabitem {
     cursor: pointer;
-    color: #1d4ff0;
+    background-color: #1d4ff0;
 }
 
 .tabitem--inactive {
