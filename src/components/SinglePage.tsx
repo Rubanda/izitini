@@ -30,10 +30,10 @@ const SinglePage = () => {
                 <div className="d-flex flex-shrink-1">
                   <div>
                     {imgs.map(({ id, pic }) => (
-                      <div key={id}>
+                      <div key={id} className="d-flex flex-direction-column gap-2">
                         <img
                           src={pic}
-                          className="border border-secondary mr-2"
+                          className="border mr-2"
                           width="75"
                           alt="..."
                         />
@@ -43,7 +43,7 @@ const SinglePage = () => {
 
                   <div className="flex-fill fillflex-shrink-1">
                     <img
-                      src="https://mpng.subpng.com/20181204/tok/kisspng-angle-cement-5c06c22bc820b3.1662803215439467958197.jpg"
+                      src="https://media.istockphoto.com/photos/cement-bags-pile-picture-id476199756?k=20&m=476199756&s=612x612&w=0&h=AHEdPIf2xyl3amOyAgG9mUwp4WRS3GgO-SzyElhDx4A="
                       object-fit="false"
                       width= '100%'
                       alt="product pic"
@@ -52,6 +52,7 @@ const SinglePage = () => {
                 </div>
               </div>
               <div className="col-sm-5 ">
+                <div className="d-flex flex-column flex-grow-1">
                 <h2 className="fw-bold">Product Name</h2>
                 <p>name of the store</p>
                 <span className="fs-2" style={{ color: "#ff9900" }}>
@@ -104,6 +105,7 @@ const SinglePage = () => {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>
